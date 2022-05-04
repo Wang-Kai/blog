@@ -1,0 +1,41 @@
+baseURL = 'https://wang-kai.github.io/'
+languageCode = 'cn'
+title = 'Follow My Heart'
+theme = "simpleness"
+author = "Steve Wang"
+googleAnalytics = "G-HCT9PR8XKE"
+
+[params]
+  lazyImage = true
+  enableMathJax = false # enable it in Front Matter
+  enableReadingTime = true
+  favicon = "favicon.ico"
+  startyear = "2022"
+  showmonth = true
+  slogan = "always make it happen"
+  description = "A simple and concise hugo theme."
+  disqus = ""
+
+[menu]
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+# for code block
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "dracula" # github, dracula, vim, monokai
+    tabWidth = 4
+[social]
+  github = "https://github.com/wang-kai"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
