@@ -8,6 +8,8 @@ K8s RBAC 体系中，可以作为授权对象的有 3 个类型：User、Group�
 
 `ServiceAccout` 作为 K8s 的一种资源类型，有具体的 API 可以操作，本文主要介绍没有具体资源定义，又相对查看困难的 User 、Group 两个对象。
 
+![](/k8s-rbac-auth.png#center "K8s RBAC model")
+
 ## 如何创建 User 和 Group？
 
 ### 1. 签发 X509 Client 证书
@@ -107,3 +109,4 @@ rules:
 ## 参考文档
 
 - [Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
+- [Simplify Kubernetes Resource Access Control using RBAC Impersonation](https://docs.bitnami.com/tutorials/simplify-kubernetes-resource-access-rbac-impersonation/)
