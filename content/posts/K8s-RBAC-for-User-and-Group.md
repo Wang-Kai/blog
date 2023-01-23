@@ -40,7 +40,8 @@ kube-apiserver 有一个 `--token-auth-file` 参数，通过该参数可以指�
 csv 文件默认为 4 列，分别是 token, user name, user uid，最后一列是 group 可选择性填写，多个 group 可以用 `,` 分隔。示例如下：
 
 ```csv
-token,user,uid,"group1,group2,group3"
+4ca847e7669ed6da37bc060da63e84c388,kubectl,10001,"system:view"
+bc060da63e8046a9cfef23dd4e4c31a6a6,node-admin,10001,"system:masters"
 ```
 
 ## 权限体系如何针对 User 和 Group 做权限校验？
